@@ -24,12 +24,14 @@
 body{
     font-family: var(--primary-font);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2rem;
     background: var(--bg-white);
     color: var(--text-black);
     overflow-x:hidden ;
 }
+
+
 
 /* custom css */
 
@@ -45,7 +47,7 @@ p{
 .btn-danger{
     background: var(--bg-danger);
     border-color: var(--bg-danger);
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
     font-weight: 500;   
 }
@@ -56,28 +58,32 @@ p{
 }
 
 
-/* navigation css 
+
+/* navigation css */
 #header .fixed-top{
-    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 /10%);
-}
+    box-shadow: 0  0.125rem rgb(0 0 0 /5%);
+} 
+
+/* .navbar-brand img{
+    padding-left: rem;
+} */
 
 #header .navbar-nav .nav-item .nav-link{
-    color:#121212;
-    padding: 1rem;
+    color:var(--text-black);
+    padding: 1rem 2rem;
     text-align: center;
 }
 
 #header .navbar-nav .nav-item .nav-link:hover,
 #header .navbar-nav .nav-item .nav-link.active{
-color:#f63440;
+    color:#f63440;
 }
 
-#header .navbar-toggler-icon{
+#header.navbar-toggler-icon{
     width: unset;
     height: unset;
 }
 
-#header .navbar-toggler:focus{
+#header.navbar-toggler:focus{
+    box-shadow: none;
 }
-
- */
