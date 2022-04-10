@@ -51,7 +51,7 @@ p{
 }
 
 .btn-danger:hover{
-    color: var(--rext-danger);
+    color: #f63440;
     background: transparent;
 }
 
@@ -159,6 +159,103 @@ p{
     }
 
 }
+
+/* offers css */
+.offers{
+    padding: 10rem;
+}
+
+.offers .offer-box .offer-image::before{
+    position: absolute; 
+    content: "";
+    top: 0;
+    left: -100%;
+     z-index: 2;
+     display: block;
+    width: 50%;
+    height: 100%;
+    background:-webki-linear-gradient(to right,rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+     transform:skewX(-25deg);
+} 
+
+ .offers .offer-box .offer-image img{
+    transform: scale(1.2);
+    width: 100%;
+    height: 100%;
+    object-fit: color;
+}
+
+.offers .offer-box:hover .offer-image::before{
+    animation: effect_shine 1s;
+}
+
+@keyframes effect_shine {
+    100%{
+        left: 150%;
+    }   
+}
+
+ .offers .offer-overlay::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+ .offers .offer-box .offer-info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition:all 250ms ease-out ;
+    justify-content: center;
+    align-items: center;
+}  
+
+.offers .offer-box .offer-info .heading-bigger{
+    font-size: 4.374rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    color:#fff;
+}
+
+.offers .offer-box .offer-info .offer-title-1{
+font-size: 1.125rem;    
+font-weight: 300;
+bottom: 0;
+letter-spacing: 2px;
+}
+
+.offers .offer-box .offer-info .btn-outline-danger{
+    color:#f5f5f5;
+    border:var(--bg-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.offers .offer-box .offer-info .btn-outline-danger:hover{
+    border-color: #f63440;
+    background-color: #f63440;
+}
+
+@media(max-width:1030px){
+   .offers .offer-box .offer-info .heading-bigger{
+    font-size: 3rem;
+   } 
+}
+
 
 
 
