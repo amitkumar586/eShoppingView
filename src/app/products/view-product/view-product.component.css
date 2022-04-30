@@ -5,23 +5,6 @@
     padding: 0;
 }
 
-/* :root{ */
-    /* background color */
-    /* --bg-danger:#f63440; */
-    /* --bg-white:#fff; */
-    /* --bg-black:#4a4a4a; */
-    /* --bg-light-white:#f5f5f5; */
-
-    /* text color */
-    /* --primary-font:'; */
-    /* --text-white:#fff; */
-    /* --text-black:#121212; */
-    /* --text-danger:#f63440; */
-    /* --text-gray:#aaa; */
-    /* --text-dark-gray:#777; */
-/* } */
-
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;

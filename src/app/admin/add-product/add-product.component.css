@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
-    
+    user-select: none; 
+      
 }
 
 body{
@@ -13,13 +13,14 @@ body{
 }
 
 .bg-img{
-    background:url('../../assets/images/bg-img2.jpg') ;
+    background:url('../../../assets/images/bg-img2.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-.bg-img::after{
+ .bg-img::after{
     position: absolute;
     content:'';
     top: 0;
@@ -27,9 +28,11 @@ body{
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.5);
+    
+    
 }
 
-.content{
+ .content{ 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,10 +116,15 @@ body{
     letter-spacing: 1px;
     font-weight:600;
     cursor: pointer;
+   
 }
 
 .field input[type="submit"]{
     background: #2691db;
+}
+
+.field-btn{
+    margin-top: 18px;
 }
 
 .login{
@@ -172,6 +180,7 @@ i span{
 .signup{
     font-size: 15px;
     color: #fff;
+    margin-top: 10px;
 }
 
 .signup a{
@@ -183,23 +192,3 @@ i span{
 .signup a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

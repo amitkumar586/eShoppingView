@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
-import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SignupComponent } from './signup/signup.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { OrdersModule } from './orders/orders.module';
+import { AdminModule } from './admin/admin.module';
+import { ProductsModule } from './products/products.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,18 @@ import { SignupComponent } from './signup/signup.component'
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent,
-    LoginComponent,
-    SignupComponent
+    SidebarComponent,
+    
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    OrdersModule,
+    AdminModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <!-- <app-navbar></app-navbar> -->
+    <div class="bg-img">
+      <div class="content">
+        <header>Signup</header>
+
+        <form [formGroup]="signupform"  (ngSubmit)="postData()">
+
+          <div class="field">
+            <span class="ti ti-user"></span>
+            <input
+              type="text"
+              formControlName="name"
+              name="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+
+          <div class="field space">
+            <span class="ti ti-google"></span>
+            <input
+              type="email"
+              formControlName="email"
+              name="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
+
+          <div class="field space">
+            <span class="ti ti-mobile"></span>
+            <input
+              type="number"
+              formControlName="phone"
+              name="phone"
+              placeholder="Enter Your Phone"
+            />
+          </div>
+
+          <div class="field space">
+            <span class="ti ti-lock"></span>
+            <input
+              type="password"
+              formControlName="password"
+              name="password"
+              placeholder="Enter Your Password"
+
+            />
+          </div>
+
+          <div class="field space">
+            <span class="ti ti-lock"></span>
+            <input
+              type="text"
+              formControlName="userType"
+              name="userType"
+              placeholder="Enter Your User Type"
+            />
+          </div>
+
+          <div class="field space">
+            <span class="ti ti-home"></span>
+            <input
+              type="text"
+              formControlName="address"
+              name="address"
+              placeholder="Enter Your Address"
+            />
+          </div>
+
+          <div class="field field-btn">
+            <input type="submit" value="SIGNUP" />
+          </div>
+        </form>
+        <div class="signup">
+          Already Account
+          <a routerLink="/login">Login Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
