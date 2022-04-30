@@ -11,16 +11,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { OrdersModule } from './orders/orders.module';
 import { AdminModule } from './admin/admin.module';
 import { ProductsModule } from './products/products.module';
-import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent,
-    SidebarComponent,
-    
+    HomeComponent
   ],
 
   imports: [
