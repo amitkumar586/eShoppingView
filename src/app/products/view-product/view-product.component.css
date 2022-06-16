@@ -65,6 +65,8 @@ p{
 
 .product-list .product-image img{
     transition: all 500ms ease-in-out;
+    height: 380px;
+    width: 70%;
 }
 
 .product-list .product-image .product-image-secondary{
@@ -94,6 +96,7 @@ p{
     top: 1.88rem;
     z-index: 99;
 }
+
 
 .product-list .product-name h3{
     font-size: 1.125rem;

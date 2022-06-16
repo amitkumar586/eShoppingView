@@ -2,26 +2,29 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
-import { AddProductComponent } from './add-product/add-product.component';
-import { DeleteProductComponent } from './delete-product/delete-product.component';
-import { UpdateProductComponent } from './update-product/update-product.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AddproductsComponent } from './addproducts/addproducts.component';
+import { EditproductsComponent } from './editproducts/editproducts.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AddProductComponent,
-    DeleteProductComponent,
-    UpdateProductComponent
+    AdminDashboardComponent,
+    AddproductsComponent,
+    EditproductsComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ReactiveFormsModule
-  ],exports:[
-    AddProductComponent,
-    UpdateProductComponent,
-    DeleteProductComponent
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
+  exports:[
+    AdminDashboardComponent,
+    AddproductsComponent,
+    EditproductsComponent
   ]
 })
 export class AdminModule { }

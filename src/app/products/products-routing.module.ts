@@ -7,22 +7,22 @@ import { ViewProductsByDateComponent } from './view-products-by-date/view-produc
 
 const routes: Routes = [
   {
-  path:'viewProduct',
+  path:'view-product/:id',
   component : ViewProductComponent,
   pathMatch:'full'
   },
   {
-    path:'viewAllproducts',
+    path:'list-products',
     component : ViewAllProductsComponent,
     pathMatch:'full'
   },
   {
-    path:'viewproductbycategory',
+    path:'search-category',
     component : ViewProductsByCategoryComponent,
     pathMatch:'full'
   },
   {
-    path:'viewproductbydate',
+    path:'search-date',
     component : ViewProductsByDateComponent,
     pathMatch:'full'
   },

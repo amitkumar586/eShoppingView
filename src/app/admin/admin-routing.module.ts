@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddProductComponent } from './add-product/add-product.component';
-import { UpdateProductComponent } from './update-product/update-product.component';
-import { DeleteProductComponent } from './delete-product/delete-product.component'
+import { AddproductsComponent } from './addproducts/addproducts.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { EditproductsComponent } from './editproducts/editproducts.component';
+
 const routes: Routes = [
+  
+  {
+    path:'admindashbord',
+    component:AdminDashboardComponent
+  },
+
   {
     path:'addproduct',
-    component:AddProductComponent
+    component:AddproductsComponent
   },
+
   {
-    path:'updateproduct',
-    component:UpdateProductComponent
-  },
-  {
-    path:'deleteproduct',
-    component:DeleteProductComponent
+    path:'editproduct/:_id',
+    component:EditproductsComponent
   }
+
 ];
 
 @NgModule({

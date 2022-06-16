@@ -7,10 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { OrdersModule } from './orders/orders.module';
-import { AdminModule } from './admin/admin.module';
 import { ProductsModule } from './products/products.module';
+import { AuthModule } from './auth/auth.module';
+import { AdminModule } from './admin/admin.module';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -19,15 +19,15 @@ import { ProductsModule } from './products/products.module';
     FooterComponent,
     HomeComponent
   ],
-
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    OrdersModule,
+    ProductsModule,
+    AuthModule,
+    HttpClientModule,
     AdminModule,
-    ProductsModule
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

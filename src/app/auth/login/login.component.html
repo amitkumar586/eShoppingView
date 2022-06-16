@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <!-- <app-navbar></app-navbar> -->
+    <div class="bg-img">
+      <div class="content">
+        <header>Login User</header>
+       
+        <form [formGroup]="loginUser" (ngSubmit)="submitData()">
+            <!-- <form >   -->
+          
+          <div class="field space">
+            <span class="ti ti-google"></span>
+            <input
+              type="email"
+              name="email"
+              formControlName="email"
+              placeholder="Enter Email"
+            />
+          </div>
+
+         
+          <div class="field space">
+            <span class="ti ti-eye"></span>
+            <input
+              type="password"
+              name="password"
+              formControlName="password"
+              placeholder="Enter User Password"
+            />
+          </div>
+
+          <div class="field field-btn">
+            <input type="submit" value="SUBMIT" />
+          </div>
+        </form>
+
+        <div class="signup">
+           If don't have an account
+          <a routerLink="/signup">Login Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

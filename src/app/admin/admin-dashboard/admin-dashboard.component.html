@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <section id="sidebar">
+      <div class="sidebar-brand">
+        <h2><i class="ti ti-desktop"></i><span>Weblog</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#"
+              ><li class="ti ti-desktop"><span>Dashboard</span></li>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><li class="ti ti-user"><span>Customers</span></li>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><li class="ti ti-file"><span>Orders</span></li>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><li class="ti ti-lock"><span>Logout</span></li>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="main-content" >
+      <header class="main-header">
+        <div class="header-left">
+          <h2><i class="ti ti-align-justify"></i>Dashboard</h2>
+        </div>
+        <div class="header-left">
+          <input type="text" class="search-bar" placeholder="Search Here" />
+          <i class="ti ti-search"></i>
+        </div>
+        <div class="header-left">
+          <img
+            src="../../../assets/images/adminimage.png"
+            class="img-responsive"
+          />
+          <h5>Admin</h5>
+          <p>Ram</p>
+        </div>
+
+        <div class="clear"></div>
+      </header>
+      <div class="clear"></div>
+
+      <div class="main-info container">
+        <div class="card-box">
+          <h3 class="custom-num custom-product">150</h3>
+          <p>hello</p>
+        </div>
+
+        <div class="card-box">
+          <h3 class="custom-num custom-user">150</h3>
+          <p>Hello</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+
+      <div class="component-pro-parent container ">
+
+        <h2 class="product-list">Products List </h2>
+        <div class="product-table">
+           
+          <table style="width: 100%">
+            <tr>
+              <th>Id</th>
+               <!-- <th>productImage</th> -->
+              <th>productName</th>
+              <th>price</th>
+              <th>Category</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            <tr *ngFor="let item of productData " >
+                <th>{{item._id}}</th>
+                <!-- <td>src="{{ item.productImage }}"</td> -->
+                <td>{{item.productName}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.category}}</td>
+                <td><button style="font-size: 20px;color: blue;" ><a routerLink="/editproduct/{{item._id}}">Edit</a></button></td>
+                
+                <td><button class="delete-btn" (click)="deleteItems(item._id )"  > <i class="ti ti-trash" style="font-size: 20px;color: red;" ></i>DELETE </button></td>
+            </tr>
+            
+          </table>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+        <!-- <h2 class="customer-list">Customer List</h2>
+
+        <div class="customer-table">
+          <table style="width: 100%">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>address</th>
+            </tr>
+            <tr>
+                <td>Param</td>
+                <td>param655@gmail.com</td>
+                <td>8596582140</td>
+                <td>Karachi</td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div> -->
+      </div>
+    </section>
+  </body>
+</html>

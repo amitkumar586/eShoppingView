@@ -4,60 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Navbar</title>
   </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav">
+        <!-- <div class="nav"> -->
+          <img src="../../assets/images/logo.png" class="brand-logo" alt="" />
+          <div class="nav-items">
+            <div class="search">
+              <input type="text" class="search-box" placeholder="search product"/>
+              <button class="search-btn">search</button>
+            </div>
+            <a href=""> <i class="ti ti-user"></i></a>
+            <a href=""> <i class="ti ti-bag"> <span class="badge">(3)</span></i></a>
+          </div>
+        <!-- </div> -->
+      </ul>
 
-  <body data-bs-spy="scroll" data-bs-target="navbar">
+      <ul class="links-container">
 
-    <!-- Navigation section -->
-    
-    <section id="header">
-      <!-- navbar start-->
-   <nav class="navbar navbar-expand-lg bg-white fixed-top"> 
-    <div class="container ms-5">
-      <a class="navbar-brand " href="#">
-        <img src="../../assets/images/logo.png" class="img-fluid">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="ti-align-justify navbar-toggler-icon"></span>
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto ">
+        <div  class="link-item">
           
-          <li class="nav-item">
-            <a class="nav-link" href="/viewProduct">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#special">Special</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonial</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#profile"><i class="ti ti-user"></i></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#cart"><i class="ti ti-bag"></i></a>
-          </li>
-          
-        </ul>
+          <a  href="#">
+            <img id="category-image" src="../../../assets/images/moblielogo.png" alt="">
+            <h6 class="list-text">Electronics</h6>
+        </a>
 
       </div>
+      <div class="link-item">
+          <a href="#">
+              <img id="category-image" src="../../../assets/images/moblielogo.png" alt="">
+              <h6>Electronics</h6>
+          </a>
+      </div>
+      <div class="link-item">
+          <a href="#">
+              <img id="category-image" src="../../../assets/images/moblielogo.png" alt="">
+              <h6>Electronics</h6>
+          </a>
+      </div>
+      <div class="link-item">
+          <a href="#">
+              <img id="category-image" src="../../../assets/images/moblielogo.png" alt="">
+              <h6>Electronics</h6>
+          </a>
+      </div>
+
+      <div class="link-item">
+        <a href="#">
+            <img id="category-image" src="../../../assets/images/moblielogo.png" alt="">
+            <h6>Electronics</h6>
+        </a>
     </div>
-    
-  </nav>
-    <!-- navbar end -->
-  </section>    
+
+      </ul>
+    </nav>
+
+    <script src="">myjsfile.js</script>
 
   </body>
-  
 </html>
-

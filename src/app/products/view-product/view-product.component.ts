@@ -6,6 +6,7 @@ import {ViewProductServiceService } from './viewproduct-service.service';
   templateUrl: './view-product.component.html',
   styleUrls: ['./view-product.component.css']
 })
+
 export class ViewProductComponent implements OnInit {
 
   productData:any =[];
@@ -16,7 +17,6 @@ export class ViewProductComponent implements OnInit {
         this.productData = data.data;
     });
     
-
    }
 
   ngOnInit(): void {

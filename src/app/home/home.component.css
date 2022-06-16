@@ -62,7 +62,7 @@ p{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 90%;
-   min-height: 650px;
+   min-height: 500px;
    position: relative;
     
 }
@@ -80,7 +80,6 @@ p{
     top: 30%;
     left: 10%;
     transform: translate(-110,50%);
-
 }
 
 .home .home-banner .home-banner-text h1{

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <!-- <app-navbar></app-navbar> -->
+    <div class="bg-img">
+      <div class="content">
+        <header>Add Product</header>
+
+        <form [formGroup]="addProduct" (ngSubmit)="submitData()">
+          <div class="field space">
+            <!-- <span class="ti ti-google"></span> -->
+            <input
+              type="text"
+              formControlName="productName"
+              name="productName"
+              placeholder="Enter Product Name"
+            />
+          </div>
+
+          <div class="field space">
+            <!-- <span class="ti ti-lock"></span> -->
+            <input
+              type="text"
+              name="price"
+              formControlName="price"
+              placeholder="Enter Price"
+            />
+          </div>
+
+          <div class="field space">
+            <!-- <span class="ti ti-lock"></span> -->
+            <input
+              type="text"
+              formControlName="category"
+              name="category"
+              placeholder="Enter Product Category"
+            />
+          </div>
+
+          <div class="field space text-cented p-1">
+            <input
+              type="file"
+              name="productImage"
+              (change)="onFileSelect($event)"
+              multiple
+            />
+          </div>
+
+          <div class="field field-btn">
+            <input type="submit" value="ADD PRODUCT" />
+          </div>
+        </form>
+
+        <div class="signup">
+          Don't have account
+          <a routerLink="/login">Login Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
